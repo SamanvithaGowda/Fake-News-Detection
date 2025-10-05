@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicons -->
+    <link href="static/icons8-facebook-ios-16-filled-32.png" rel="icon">
+    <link href="static/icons8-facebook-ios-16-filled-96.png" rel="icons8-facebook-ios-16-filled-96.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <title>Contact Us - Fake News Detection</title>
+</head>
+<body class="bg-gradient-to-br from-amber-100 to-amber-200 min-h-screen" style="background: linear-gradient(135deg, #f5e6cc 0%, #fbe8d3 50%, #f5e6cc 100%);">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b border-gray-100 sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="{{ url_for('static', filename='images/prediction_logo.svg') }}" alt="Fake News Detection Logo" class="w-12 h-12">
+                    <span class="text-2xl font-bold text-gray-800">Fake News Detection</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-amber-600 font-medium transition duration-300">Home</a>
+                    <a href="/predict" class="text-gray-700 hover:text-amber-600 font-medium transition duration-300">Prediction</a>
+                    <a href="/about" class="text-gray-700 hover:text-amber-600 font-medium transition duration-300">About</a>
+                    <a href="/contact" class="text-amber-600 font-medium">Contact</a>
+                    <a href="/predict" class="bg-amber-600 text-white px-6 py-2 rounded-full font-medium hover:bg-amber-700 transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-12" style="background: linear-gradient(135deg, #f5e6cc 0%, #fbe8d3 50%, #f5e6cc 100%);">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Get in Touch</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Have questions about our fake news detection platform? We'd love to hear from you!
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16" style="background: linear-gradient(135deg, #f5e6cc 0%, #fbe8d3 50%, #f5e6cc 100%);">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                
+                <!-- Contact Information -->
+                <div class="grid md:grid-cols-2 gap-12 mb-12">
+                    <div class="bg-white rounded-lg shadow-xl p-8" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid #DEB887;">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                            <i class="fas fa-envelope text-amber-700 mr-3"></i>
+                            Contact Information
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-1">Email</h3>
+                                    <p class="text-gray-600">samanvitha@gmail.com</p>
+                                    <p class="text-gray-600">support@fakenewdetection.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-1">Phone</h3>
+                                    <p class="text-gray-600">+91 1234567890</p>
+                                    <p class="text-gray-600">Mon-Fri 9:00AM-6:00PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-1">Address</h3>
+                                    <p class="text-gray-600">123 AI Street</p>
+                                    <p class="text-gray-600">Fakeworld City, FN 12345</p>
+                                    <p class="text-gray-600">Bengaluru, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-1">Business Hours</h3>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-lg shadow-xl p-8" style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid #DEB887;">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                            <i class="fas fa-paper-plane text-amber-700 mr-3"></i>
+                            Send Message
+                        </h2>
+                        
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" required>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-amber-600 text-black font-bold py-3 px-6 rounded-lg hover:bg-amber-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Additional Information -->
+                <div class="bg-white rounded-lg shadow-xl p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                        <i class="fas fa-info-circle text-amber-700 mr-3"></i>
+                        Additional Information
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-headset text-amber-700 text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">24/7 Support</h3>
+                            <p class="text-gray-600">Our technical support team is available to help you with any questions or issues.</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-shield-alt text-amber-700 text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">Privacy Protected</h3>
+                            <p class="text-gray-600">Your data and messages are protected with enterprise-grade security measures.</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-reply text-amber-700 text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2">Quick Response</h3>
+                            <p class="text-gray-600">We typically respond to all inquiries within 24 hours during business days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300">&copy; 2024 Fake News Detection. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
