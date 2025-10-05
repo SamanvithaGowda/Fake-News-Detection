@@ -1,14 +1,5 @@
 # Fake News Detection using Machine Learning
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Problem Definition](#problem-definition)
-- [Project Structure](#project-structure)
-- [Datasets](#datasets)
-- [Model Name](#model-name)
-- [Images](#images)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
 
 ## Introduction
 This repository contains a comprehensive project for detecting fake news using machine learning techniques and various natural language processing techniques. The project includes data analysis, model training, and a web application for real-time fake news detection. The machine learning model is designed to classify news articles as either real or fake based on their content.
@@ -92,7 +83,5 @@ To get started with this project, follow these steps:
    ```
 
 Access the application in your web browser by navigating to `http://localhost:5000`.
-
----
 
 
